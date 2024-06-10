@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn_continue").click(function () {
+          $("#frm_request").slideToggle("slow");
+        });
+      });
+    </script>
+    <title>العقارات || عقاري كوم</title>
+  </head>
+  <body>
+    <div class="akarpage">
+      <!-- Navbar -->
+      <ul>
+        <li><a href="home.html">الرئيسية</a></li>
+        <li><a href="properties.html">العقارات</a></li>
+        <li><a href="aboutus.html">عن</a></li>
+      </ul>
+
+      <!-- Title -->
+      <div class="akar">
+        <h1>العقارات</h1>
+        <p>قم باختيار مايناسب راحتك</p>
+      </div>
+
+      <!-- properties -->
+      <table class="akartable">
+        <tr>
+          <th>المدينة</th>
+          <th>تفاصيل</th>
+          <th>الإيجار الشهري</th>
+          <th>إظهار التفاصيل</th>
+          <th>اختيار</th>
+        </tr>
+
+        <tr>
+          <td>دمشق</td>
+          <td>شقة غرفة وصالة مساحة 70م</td>
+          <td>500,000 ل.س</td>
+          <td><input type="checkbox" name="cb_details" id="prop_1" /></td>
+          <td><input type="radio" name="rb_select" id="prop_1" /></td>
+        </tr>
+        <tr class="prop_details">
+          <td colspan="5">
+            <table>
+              <tr>
+                <td>المنطقة: ركن الدين</td>
+                <td>متوفر كراج</td>
+                <td>الطابق الثالث</td>
+              </tr>
+              <tr>
+                <td>الملكية: طابو</td>
+                <td>بلكون مساحة 12 متر</td>
+                <td>مفروشة</td>
+              </tr>
+              <tr>
+                <td>
+                  <img
+                    id="img"
+                    src="assets/images/properties/prop_1_1.webp"
+                    width="150"
+                    height="150"
+                    class="prop_image"
+                  />
+                </td>
+                <td>
+                  <img
+                    id="img"
+                    src="assets/images/properties/prop_1_2.webp"
+                    width="150"
+                    height="150"
+                    class="prop_image"
+                  />
+                </td>
+                <td>
+                  <img
+                    id="img"
+                    src="assets/images/properties/prop_1_3.webp"
+                    width="150"
+                    height="150"
+                    class="prop_image"
+                  />
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <div class="btncontinueDIV">
+        <button id="btn_continue">متابعة</button>
+      </div>
+      <!-- Submit Request -->
+      <div class="formReqestDIV">
+        <form id="frm_request" action="#" method="get">
+          <!-- Full Name -->
+          <h4 id="titleForm">يرجى إدخال المعلومات التالية</h4>
+          <div class="inputname">
+            <label for="name">الاسم الكامل</label><br />
+            <input type="text" name="name" id=""/>
+          </div>
+          <!-- National number -->
+          <div class="inputnationaId">
+            <label for="national_id">الرقم الوطني</label><br />
+            <input type="text" name="national_id" id="" />
+          </div>
+          <!-- dob -->
+          <div class="inputdateofbirth">
+            <label for="date_of_birth">تاريخ الولادة</label><br />
+            <input type="text" name="date_of_birth" id="" />
+          </div>
+
+          <!-- mobile -->
+          <div class="inputmobile">
+            <label for="mobile">رقم الموبايل</label><br />
+            <input type="text" name="mobile" id="" />
+          </div>
+          <!-- email -->
+          <div class="inputemail">
+            <label for="email">البريد الالكتروني</label><br />
+            <input type="text" name="email" id="" />
+          </div>
+          <!-- Captcha -->
+          <label for="captcha">قم بإدخال الرمز الظاهر في الصورة</label>
+          <input type="text" name="captcha" id="" /><br>
+          <!-- Send -- />
+          <button id="btn_submit">إرسال</button>
+        </form>
+      </div>
+    </div>
+    <script src="assets/myFunctions.js"></script>
+  </body>
+</html>
