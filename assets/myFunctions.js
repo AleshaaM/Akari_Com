@@ -1,4 +1,7 @@
 $(document).ready(function () {
+  var selectedPropertyId = 0;
+
+
     $("#btn_continue").click(function () {
       $("#frm_request").slideToggle("slow");
     });
@@ -11,4 +14,9 @@ $(document).ready(function () {
       else
         $("#" + id + "_detail").fadeOut(300);
     });
+
+    $(document).on("click", ".btn_select_property", function(){
+
+    });
+
 });
