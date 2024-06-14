@@ -9,7 +9,7 @@ body {
   margin: 0px;
   padding: 0px;
   direction: rtl;
-  background-image: url('./images/properties/tt8.jpg');
+  background-image: url('./images/site/tt8.webp');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-attachment: fixed;
@@ -46,7 +46,7 @@ li a {
   border-left: #eeb006 2px solid;
 }
 /* #homeicon{
-  background: url('./images/properties/.jpg') no-repeat; 
+  background: url('./images/site/.webp') no-repeat; 
   width: 35px;
   height: 35px;
   display: inline-block;
@@ -59,7 +59,7 @@ li a:hover {
 }
 /* تنسيق  الكتابة اللي قبل النافيغيشن بار */
 .titleaboutDIV{
-  background-image: url('./images/properties/m4.jpg');
+  background-image: url('./images/site/m4.webp');
   text-align: center;
   background-attachment: fixed;
   margin: 0px;
@@ -141,7 +141,7 @@ li a:hover {
   width: 100%;
   height: 250px;
   padding-top:70px ;
-  background: url('./images/properties/m4.jpg');
+  background: url('./images/site/m4.webp');
   text-align: center;
   border-top: #da980a 2px solid;
   background-attachment: fixed;
@@ -190,21 +190,21 @@ li a:hover {
   width: 35px;
   height: 35px;
   display: inline-block;
-  background:url("./images/properties/locationicon.png") no-repeat;
+  background:url("./images/site/locationicon.webp") no-repeat;
   background-size: contain;
 }
 #phon{
   width: 35px;
   height: 35px;
   display: inline-block;
-  background:url("./images/properties/phonicon.png") no-repeat;
+  background:url("./images/site/phonicon.webp") no-repeat;
   background-size: contain;
 }
 #email{
   width: 35px;
   height: 35px;
   display: inline-block;
-  background:url("./images/properties/emailicon.png") no-repeat;
+  background:url("./images/site/emailicon.webp") no-repeat;
   background-size: contain;
 }
 /* تنسيق الكتابة الموجودة تحت كل مستطيل والتي هي معلومات التواصل */
@@ -230,7 +230,7 @@ li a:hover {
 }
 /* تنسيق الحاوية الموجود فيها الجدول */
 .tableDIV{
-  background: url('./images/properties/m4.jpg');
+  background: url('./images/site/m4.webp');
   height: 250px;
   display: flex;
   justify-content: center;
@@ -298,7 +298,7 @@ th{
 /* ================properties page=============== */
 /* لتنسيق الحاوية الخاصة بالعنوان والفقرة الموجودين بأول الصفحة */
 .akar{
-  background: url('./images/properties/m4.jpg');
+  background: url('./images/site/m4.webp');
   text-shadow: 2px 2px 4px #eeb006;
   padding: 2px;
   margin-bottom: 20px;
@@ -359,7 +359,7 @@ th{
   box-shadow: 2px 2px 4px goldenrod;
 }
 .formReqestDIV{
-  background: url('./images/properties/m4.jpg');
+  background: url('./images/site/m4.webp');
   background-size: contain;
   background-attachment: fixed;
   display: flex;
@@ -419,7 +419,7 @@ th{
     text-align: center;
     text-shadow: 2px 2px 4px goldenrod;
     font-size: 26px;
-    background: url('./images/properties/m4.jpg');
+    background: url('./images/site/m4.webp');
     padding: 6px;
     height: 60px;
     background-attachment: fixed;
@@ -439,7 +439,7 @@ th{
 }
 #infoofakar{
   text-align: center;
-  background: url('./images/properties/m4.jpg');
+  background: url('./images/site/m4.webp');
   background-attachment: fixed;
   width: 100%;
   height: 350px;
@@ -464,3 +464,9 @@ th{
   font-size: 30px;
   margin-top: 30px;
 }
+
+
+/******ahmad*****/
+.property_detials, #frm_request {
+  display: none;
+} 

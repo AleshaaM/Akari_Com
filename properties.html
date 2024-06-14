@@ -4,14 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $("#btn_continue").click(function () {
-          $("#frm_request").slideToggle("slow");
-        });
-      });
-    </script>
     <title>العقارات || عقاري كوم</title>
   </head>
   <body>
@@ -32,6 +24,7 @@
       <!-- properties -->
       <table class="akartable">
         <tr>
+          <th>#</th>
           <th>المدينة</th>
           <th>تفاصيل</th>
           <th>الإيجار الشهري</th>
@@ -40,14 +33,15 @@
         </tr>
 
         <tr>
+          <td>1</td>
           <td>دمشق</td>
           <td>شقة غرفة وصالة مساحة 70م</td>
           <td>500,000 ل.س</td>
-          <td><input type="checkbox" name="cb_details" id="prop_1" /></td>
-          <td><input type="radio" name="rb_select" id="prop_1" /></td>
+          <td><input type="checkbox" name="cb_details" class="btn_view_property" id="prop_1" /></td>
+          <td><input type="radio" name="rb_select" class="btn_select_property" id="prop_1" /></td>
         </tr>
-        <tr class="prop_details">
-          <td colspan="5">
+        <tr id="prop_1_detail" class="property_detials">
+          <td colspan="6">
             <table>
               <tr>
                 <td>المنطقة: ركن الدين</td>
@@ -91,7 +85,500 @@
             </table>
           </td>
         </tr>
+
+        <tr>
+          <td>2</td>
+          <td>دمشق</td>
+          <td>شقة غرفتين وصالة مساحة 80م</td>
+          <td>650,000 ل.س</td>
+          <td><input type="checkbox" name="cb_details" class="btn_view_property" id="prop_2" /></td>
+          <td><input type="radio" name="rb_select" class="btn_select_property" id="prop_2" /></td>
+        </tr>
+        <tr id="prop_2_detail" class="property_detials">
+          <td colspan="6">
+            <table>
+              <tr>
+                <td>المنطقة: مساكن برزة</td>
+                <td>متوفر كراج</td>
+                <td>الطابق الأول</td>
+              </tr>
+              <tr>
+                <td>الملكية: طابو</td>
+                <td>بلكون مساحة 12 متر</td>
+                <td>غير مفروشة</td>
+              </tr>
+              <tr>
+                <td>
+                  <img
+                    id="img"
+                    src="assets/images/properties/prop_2_1.webp"
+                    width="150"
+                    height="150"
+                    class="prop_image"
+                  />
+                </td>
+                <td>
+                  <img
+                    id="img"
+                    src="assets/images/properties/prop_2_2.webp"
+                    width="150"
+                    height="150"
+                    class="prop_image"
+                  />
+                </td>
+                <td>
+                  <img
+                    id="img"
+                    src="assets/images/properties/prop_2_3.webp"
+                    width="150"
+                    height="150"
+                    class="prop_image"
+                  />
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+          <td>دمشق</td>
+          <td>شقة غرفتين وصالة مساحة 80م</td>
+          <td>650,000 ل.س</td>
+          <td><input type="checkbox" name="cb_details" class="btn_view_property" id="prop_3" /></td>
+          <td><input type="radio" name="rb_select" class="btn_select_property" id="prop_3" /></td>
+        </tr>
+        <tr id="prop_3_detail" class="property_detials">
+          <td colspan="6">
+            <table>
+              <tr>
+                <td>المنطقة: مساكن برزة</td>
+                <td>متوفر كراج</td>
+                <td>الطابق الأول</td>
+              </tr>
+              <tr>
+                <td>الملكية: طابو</td>
+                <td>بلكون مساحة 12 متر</td>
+                <td>غير مفروشة</td>
+              </tr>
+              <tr>
+                <td>
+                  <img
+                    id="img"
+                    src="assets/images/properties/prop_3_1.webp"
+                    width="150"
+                    height="150"
+                    class="prop_image"
+                  />
+                </td>
+                <td>
+                  <img
+                    id="img"
+                    src="assets/images/properties/prop_3_2.webp"
+                    width="150"
+                    height="150"
+                    class="prop_image"
+                  />
+                </td>
+                <td>
+                  <img
+                    id="img"
+                    src="assets/images/properties/prop_3_3.webp"
+                    width="150"
+                    height="150"
+                    class="prop_image"
+                  />
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr>
+          <td>4</td>
+          <td>دمشق</td>
+          <td>شقة غرفتين وصالة مساحة 80م</td>
+          <td>650,000 ل.س</td>
+          <td><input type="checkbox" name="cb_details" class="btn_view_property" id="prop_4" /></td>
+          <td><input type="radio" name="rb_select" class="btn_select_property" id="prop_4" /></td>
+        </tr>
+        <tr id="prop_4_detail" class="property_detials">
+          <td colspan="6">
+            <table>
+              <tr>
+                <td>المنطقة: مساكن برزة</td>
+                <td>متوفر كراج</td>
+                <td>الطابق الأول</td>
+              </tr>
+              <tr>
+                <td>الملكية: طابو</td>
+                <td>بلكون مساحة 12 متر</td>
+                <td>غير مفروشة</td>
+              </tr>
+              <tr>
+                <td>
+                  <img
+                    id="img"
+                    src="assets/images/properties/prop_4_1.webp"
+                    width="150"
+                    height="150"
+                    class="prop_image"
+                  />
+                </td>
+                <td>
+                  <img
+                    id="img"
+                    src="assets/images/properties/prop_4_2.webp"
+                    width="150"
+                    height="150"
+                    class="prop_image"
+                  />
+                </td>
+                <td>
+                  <img
+                    id="img"
+                    src="assets/images/properties/prop_4_3.webp"
+                    width="150"
+                    height="150"
+                    class="prop_image"
+                  />
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr>
+          <td>5</td>
+          <td>دمشق</td>
+          <td>شقة غرفتين وصالة مساحة 80م</td>
+          <td>650,000 ل.س</td>
+          <td><input type="checkbox" name="cb_details" class="btn_view_property" id="prop_5" /></td>
+          <td><input type="radio" name="rb_select" class="btn_select_property" id="prop_5" /></td>
+        </tr>
+        <tr id="prop_5_detail" class="property_detials">
+          <td colspan="6">
+            <table>
+              <tr>
+                <td>المنطقة: مساكن برزة</td>
+                <td>متوفر كراج</td>
+                <td>الطابق الأول</td>
+              </tr>
+              <tr>
+                <td>الملكية: طابو</td>
+                <td>بلكون مساحة 12 متر</td>
+                <td>غير مفروشة</td>
+              </tr>
+              <tr>
+                <td>
+                  <img
+                    id="img"
+                    src="assets/images/properties/prop_5_1.webp"
+                    width="150"
+                    height="150"
+                    class="prop_image"
+                  />
+                </td>
+                <td>
+                  <img
+                    id="img"
+                    src="assets/images/properties/prop_5_2.webp"
+                    width="150"
+                    height="150"
+                    class="prop_image"
+                  />
+                </td>
+                <td>
+                  <img
+                    id="img"
+                    src="assets/images/properties/prop_5_3.webp"
+                    width="150"
+                    height="150"
+                    class="prop_image"
+                  />
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr>
+          <td>6</td>
+          <td>دمشق</td>
+          <td>شقة غرفتين وصالة مساحة 80م</td>
+          <td>650,000 ل.س</td>
+          <td><input type="checkbox" name="cb_details" class="btn_view_property" id="prop_6" /></td>
+          <td><input type="radio" name="rb_select" class="btn_select_property" id="prop_6" /></td>
+        </tr>
+        <tr id="prop_6_detail" class="property_detials">
+          <td colspan="6">
+            <table>
+              <tr>
+                <td>المنطقة: مساكن برزة</td>
+                <td>متوفر كراج</td>
+                <td>الطابق الأول</td>
+              </tr>
+              <tr>
+                <td>الملكية: طابو</td>
+                <td>بلكون مساحة 12 متر</td>
+                <td>غير مفروشة</td>
+              </tr>
+              <tr>
+                <td>
+                  <img
+                    id="img"
+                    src="assets/images/properties/prop_6_1.webp"
+                    width="150"
+                    height="150"
+                    class="prop_image"
+                  />
+                </td>
+                <td>
+                  <img
+                    id="img"
+                    src="assets/images/properties/prop_6_2.webp"
+                    width="150"
+                    height="150"
+                    class="prop_image"
+                  />
+                </td>
+                <td>
+                  <img
+                    id="img"
+                    src="assets/images/properties/prop_6_3.webp"
+                    width="150"
+                    height="150"
+                    class="prop_image"
+                  />
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td>7</td>
+          <td>دمشق</td>
+          <td>شقة غرفتين وصالة مساحة 80م</td>
+          <td>650,000 ل.س</td>
+          <td><input type="checkbox" name="cb_details" class="btn_view_property" id="prop_7" /></td>
+          <td><input type="radio" name="rb_select" class="btn_select_property" id="prop_7" /></td>
+        </tr>
+        <tr id="prop_7_detail" class="property_detials">
+          <td colspan="6">
+            <table>
+              <tr>
+                <td>المنطقة: مساكن برزة</td>
+                <td>متوفر كراج</td>
+                <td>الطابق الأول</td>
+              </tr>
+              <tr>
+                <td>الملكية: طابو</td>
+                <td>بلكون مساحة 12 متر</td>
+                <td>غير مفروشة</td>
+              </tr>
+              <tr>
+                <td>
+                  <img
+                    id="img"
+                    src="assets/images/properties/prop_7_1.webp"
+                    width="150"
+                    height="150"
+                    class="prop_image"
+                  />
+                </td>
+                <td>
+                  <img
+                    id="img"
+                    src="assets/images/properties/prop_7_2.webp"
+                    width="150"
+                    height="150"
+                    class="prop_image"
+                  />
+                </td>
+                <td>
+                  <img
+                    id="img"
+                    src="assets/images/properties/prop_7_3.webp"
+                    width="150"
+                    height="150"
+                    class="prop_image"
+                  />
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr>
+          <td>8</td>
+          <td>دمشق</td>
+          <td>شقة غرفتين وصالة مساحة 80م</td>
+          <td>650,000 ل.س</td>
+          <td><input type="checkbox" name="cb_details" class="btn_view_property" id="prop_8" /></td>
+          <td><input type="radio" name="rb_select" class="btn_select_property" id="prop_8" /></td>
+        </tr>
+        <tr id="prop_8_detail" class="property_detials">
+          <td colspan="6">
+            <table>
+              <tr>
+                <td>المنطقة: مساكن برزة</td>
+                <td>متوفر كراج</td>
+                <td>الطابق الأول</td>
+              </tr>
+              <tr>
+                <td>الملكية: طابو</td>
+                <td>بلكون مساحة 12 متر</td>
+                <td>غير مفروشة</td>
+              </tr>
+              <tr>
+                <td>
+                  <img
+                    id="img"
+                    src="assets/images/properties/prop_8_1.webp"
+                    width="150"
+                    height="150"
+                    class="prop_image"
+                  />
+                </td>
+                <td>
+                  <img
+                    id="img"
+                    src="assets/images/properties/prop_8_2.webp"
+                    width="150"
+                    height="150"
+                    class="prop_image"
+                  />
+                </td>
+                <td>
+                  <img
+                    id="img"
+                    src="assets/images/properties/prop_8_3.webp"
+                    width="150"
+                    height="150"
+                    class="prop_image"
+                  />
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr>
+          <td>9</td>
+          <td>دمشق</td>
+          <td>شقة غرفتين وصالة مساحة 80م</td>
+          <td>650,000 ل.س</td>
+          <td><input type="checkbox" name="cb_details" class="btn_view_property" id="prop_9" /></td>
+          <td><input type="radio" name="rb_select" class="btn_select_property" id="prop_9" /></td>
+        </tr>
+        <tr id="prop_9_detail" class="property_detials">
+          <td colspan="6">
+            <table>
+              <tr>
+                <td>المنطقة: مساكن برزة</td>
+                <td>متوفر كراج</td>
+                <td>الطابق الأول</td>
+              </tr>
+              <tr>
+                <td>الملكية: طابو</td>
+                <td>بلكون مساحة 12 متر</td>
+                <td>غير مفروشة</td>
+              </tr>
+              <tr>
+                <td>
+                  <img
+                    id="img"
+                    src="assets/images/properties/prop_9_1.webp"
+                    width="150"
+                    height="150"
+                    class="prop_image"
+                  />
+                </td>
+                <td>
+                  <img
+                    id="img"
+                    src="assets/images/properties/prop_9_2.webp"
+                    width="150"
+                    height="150"
+                    class="prop_image"
+                  />
+                </td>
+                <td>
+                  <img
+                    id="img"
+                    src="assets/images/properties/prop_9_3.webp"
+                    width="150"
+                    height="150"
+                    class="prop_image"
+                  />
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr>
+          <td>10</td>
+          <td>دمشق</td>
+          <td>شقة غرفتين وصالة مساحة 80م</td>
+          <td>650,000 ل.س</td>
+          <td><input type="checkbox" name="cb_details" class="btn_view_property" id="prop_10" /></td>
+          <td><input type="radio" name="rb_select" class="btn_select_property" id="prop_10" /></td>
+        </tr>
+        <tr id="prop_10_detail" class="property_detials">
+          <td colspan="6">
+            <table>
+              <tr>
+                <td>المنطقة: مساكن برزة</td>
+                <td>متوفر كراج</td>
+                <td>الطابق الأول</td>
+              </tr>
+              <tr>
+                <td>الملكية: طابو</td>
+                <td>بلكون مساحة 12 متر</td>
+                <td>غير مفروشة</td>
+              </tr>
+              <tr>
+                <td>
+                  <img
+                    id="img"
+                    src="assets/images/properties/prop_10_1.webp"
+                    width="150"
+                    height="150"
+                    class="prop_image"
+                  />
+                </td>
+                <td>
+                  <img
+                    id="img"
+                    src="assets/images/properties/prop_10_2.webp"
+                    width="150"
+                    height="150"
+                    class="prop_image"
+                  />
+                </td>
+                <td>
+                  <img
+                    id="img"
+                    src="assets/images/properties/prop_10_3.webp"
+                    width="150"
+                    height="150"
+                    class="prop_image"
+                  />
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        
       </table>
+
+
+
+
       <div class="btncontinueDIV">
         <button id="btn_continue">متابعة</button>
       </div>
@@ -128,11 +615,13 @@
           <!-- Captcha -->
           <label for="captcha">قم بإدخال الرمز الظاهر في الصورة</label>
           <input type="text" name="captcha" id="" /><br>
-          <!-- Send -- />
+          <!-- Send -->
+            
           <button id="btn_submit">إرسال</button>
         </form>
       </div>
     </div>
+    <script src="assets/lib/jquery.min.js"></script>
     <script src="assets/myFunctions.js"></script>
   </body>
 </html>
