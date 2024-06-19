@@ -22,7 +22,7 @@
       </div>
 
       <!-- properties -->
-      <table class="akartable">
+      <table id="akarTable">
         <tr>
           <th>#</th>
           <th>المدينة</th>
@@ -581,40 +581,42 @@
       </div>
       <!-- Submit Request -->
       <div class="formReqestDIV">
-        <form id="frm_request" action="#" method="get">
+        <form id="frmRequest" action="#" method="get">
           <!-- Full Name -->
           <h4 id="titleForm">يرجى إدخال المعلومات التالية</h4>
           <div class="inputname">
             <label for="name">الاسم الكامل</label><br />
-            <input type="text" name="name" id=""/>
+            <input type="text" name="name" id="fullName"/>
           </div>
           <!-- National number -->
           <div class="inputnationaId">
             <label for="national_id">الرقم الوطني</label><br />
-            <input type="text" name="national_id" id="" />
+            <input type="text" name="national_id" id="national_id" maxlength="11"/>
           </div>
           <!-- dob -->
           <div class="inputdateofbirth">
             <label for="date_of_birth">تاريخ الولادة</label><br />
-            <input type="text" name="date_of_birth" id="" />
+            <input type="text" name="date_of_birth" id="date_of_birth" maxlength="10" placeholder="dd-mm-yyyy" />
           </div>
 
           <!-- mobile -->
           <div class="inputmobile">
             <label for="mobile">رقم الموبايل</label><br />
-            <input type="text" name="mobile" id="" />
+            <input type="text" name="mobile" id="mobile" maxlength="10" placeholder="09xxxxxxxx" />
           </div>
           <!-- email -->
           <div class="inputemail">
             <label for="email">البريد الالكتروني</label><br />
-            <input type="text" name="email" id="" />
+            <input type="text" name="email" id="email" placeholder="example@example.com" />
           </div>
           <!-- Captcha -->
-          <label for="captcha">قم بإدخال الرمز الظاهر في الصورة</label>
-          <input type="text" name="captcha" id="" /><br>
+           <label>رمز التحقق</label>
+          <div id="captchaImg" style="border: 5px;"></div>
+          <label for="captcha">قم بإدخال الرمز الظاهر اعلاه</label>
+          <input type="text" name="captcha" id="captcha"  maxlength="5"/><br>
           <!-- Send -->
             
-          <button id="btn_submit">إرسال</button>
+          <button type="button" id="btnSubmit">إرسال</button>
         </form>
       </div>
     </div>
