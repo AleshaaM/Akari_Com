@@ -53,11 +53,12 @@ li a {
   background-size: contain;
   float: left;
 } */
+ 
 li a:hover {
   background-color: #ddd;
   color: black;
 }
-/* تنسيق  الكتابة اللي قبل النافيغيشن بار */
+
 .titleaboutDIV{
   background-image: url('./images/site/m4.webp');
   text-align: center;
@@ -91,7 +92,7 @@ li a:hover {
   padding-bottom: 10px;
   letter-spacing: 3px;
 }
-/* تنسيق الكتابة اللي بعد النافيغيشن بار */
+
 .defenition {
   margin: 20px 60px 20px 60px;
   line-height:50px;
@@ -101,7 +102,7 @@ li a:hover {
   font-size: 30px;
   text-shadow: 3px 3px 8px gold;
 }
-/* تنسيق الحاوية(div) الموجود فيها كارد الصور */
+
 .cardcontainer{
   display: flex;
   justify-content: center;
@@ -109,21 +110,21 @@ li a:hover {
   margin-top: 37px;
   margin-bottom: 20px;
 }
-/* تنسيق الكارد بشكل عام */
+
 .card{
   width: 300px;
   background: #ffffff;
   margin: 10px;
   border: goldenrod 3px solid;
 }
-/* تنسيق الصورة الخاصة بالكارد */
+
 .card img{
   width: 100%;
   height: 210px;
   /* object-fit: cover; */
   border-bottom: #da980a 3px solid;
 }
-/* تنسيق محتوى الكارد */
+
 .contnt{
   background-color: #504e4e;
   padding:10px;
@@ -136,7 +137,7 @@ li a:hover {
   font-size: 17px;
   padding-top: 10px;
 }
-/*  تنسيق القسم الموجود في معلومات التواصل */
+
 .containerinfocontact{
   width: 100%;
   height: 250px;
@@ -147,7 +148,7 @@ li a:hover {
   background-attachment: fixed;
   background-size: contain;
 }
-/* تنسيق العناوين الخاصة بمعلومات التواصل لتصبح داخل مستطيلات */
+
 #cont{
   margin: auto;
   width: 50%;
@@ -161,17 +162,17 @@ li a:hover {
   border: gold 2px solid;
   border-radius: 10px 20px 10px 20px;
 }
-/* اضافة ظل ذهبي عند المرور فوق المربع الخاص بالعنوان الأول */
+
 #cont:hover{
   box-shadow: 4px 4px 6px goldenrod;
 }
-/*  تنسيق الحاوية(div) الخاصة بمستطيلات العنوان والهاتف والبريد ليكونو جنب بعض */
+
 #infocontact{
   display: flex;
   justify-content: center;
   align-items: center;
 }
-/* تنسيق العناوين داخل المستطيلات */
+
 #infocontact h5 {
   margin: 40px;
   color: rgb(0, 0, 0);
@@ -185,7 +186,7 @@ li a:hover {
   border-radius: 10px ;
   background-color: rgba(255, 255, 255, 0.555);;
 }
-/* تنسيق الأيقونات الخاصة بكل مستطيل */
+
 #adress{
   width: 35px;
   height: 35px;
@@ -207,7 +208,7 @@ li a:hover {
   background:url("./images/site/emailicon.webp") no-repeat;
   background-size: contain;
 }
-/* تنسيق الكتابة الموجودة تحت كل مستطيل والتي هي معلومات التواصل */
+
 #infocontact p{
   text-shadow: 1px 1px 2px gold;
   font-size: 20px;
@@ -216,7 +217,7 @@ li a:hover {
   margin-top: 0px;
 }
 /* ==================home page================= */
-/* التنسيق العام للصفحة */
+
 .home{
   text-align: center;
   font-size: 30px;
@@ -228,7 +229,7 @@ li a:hover {
 .home h1{
   margin: 25px;
 }
-/* تنسيق الحاوية الموجود فيها الجدول */
+
 .tableDIV{
   background: url('./images/site/m4.webp');
   height: 250px;
@@ -238,7 +239,7 @@ li a:hover {
   border-top: goldenrod 2px solid;
 
 }
-/* التنسيق العام للجدول */
+
 .studentinfo{
   width: 50%;
   height: auto;
@@ -258,7 +259,7 @@ li a:hover {
   background-color: #ffffff;
   justify-content: center;
 } */
-/* التسيق الخاص بمحتوى الجدول */
+
 th, td{
   padding: 10px;
   text-align: center;
@@ -296,7 +297,7 @@ th{
   font-family: 'Courier New', Courier, monospace;
 }
 /* ================properties page=============== */
-/* لتنسيق الحاوية الخاصة بالعنوان والفقرة الموجودين بأول الصفحة */
+
 .akar{
   background: url('./images/site/m4.webp');
   text-shadow: 2px 2px 4px #eeb006;
@@ -373,8 +374,9 @@ th{
   text-align: center;
 }
 #frmRequest{
-  background-color:transparent;
-  backdrop-filter: blur(15px);
+  /* backdrop-filter: blur(15px); */
+  background-color:rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 0px 8px gold;
   border: #ffffff 2px solid;
   text-align: center;
   margin-bottom: 20px;
